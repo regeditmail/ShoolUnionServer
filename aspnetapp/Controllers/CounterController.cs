@@ -47,7 +47,7 @@ namespace aspnetapp.Controllers
         public async Task<ActionResult<CounterResponse>> GetCounter()
         {
             var counter =  await getCounterWithInit();
-            return new CounterResponse { data = counter.count };
+            return new CounterResponse { data = 99 };
         }
 
         // POST: api/Counter
